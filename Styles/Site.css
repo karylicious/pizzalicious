@@ -1,0 +1,479 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+body   
+{
+    
+    background: #4D0502;
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #000000;
+    
+}
+#HyperLinkCesta:hover {color: #D0A55C;}
+
+.LabelLog
+{
+    margin-right:10px;  
+    float:right;  
+}
+
+
+#princ{z-index: 1; position:   static;}
+
+#nomeArt:link
+{ 
+    color: #c04806;
+    font-size: 1em;
+    font: Verdana;
+    text-decoration:none;
+}
+
+#nomeArt:hover
+{
+    color: #F97C39;
+}
+
+
+a:link, a:visited
+{
+    color: #c04806;
+    font-size: 1em;
+    font: Verdana;
+    text-decoration:none;
+}
+
+a:hover
+{
+    color: white;
+    text-decoration:none;
+}
+
+a:active
+{
+    color: #F97C39;
+}
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+    height: 20px;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+#main
+{
+     width: 708px;
+     background-image: url('../Images/main.png');
+     background-position:50% top;
+    height: auto;
+    padding-left:40px;
+    
+    
+
+}
+
+
+
+
+
+.page
+{
+    width: 960px;
+    background-color:  #4D0502;
+    margin: 20px auto 0px auto;
+    /*Pborder: 1px solid #496077;*/
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: #4D0502;
+    
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #465c71;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+}
+
+.main
+{
+    padding: 0px 12px;
+    margin: 0px 8px 8px 0px;
+    min-height: 420px;
+    width: 934px;
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer
+{
+    /*position:relative;
+    float:left;
+    left:500px;
+    clear:left;*/
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+    color:#ffffff;
+    position:relative;
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+    background-image:url('menu.png');
+    width:100%;
+    height: 67px;
+}
+.menu{font-family: Verdana; font-size: 11px; font-weight: 700; color: #FFFFFF;}
+
+div.menu
+{
+    padding: 4px 0px 4px 8px;
+}
+
+div.menu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+    background-color: #465c71;
+    border: 1px #4e667d solid;
+    color: #dde4ec;
+    display: block;
+    line-height: 1.35em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+div.menu ul li a:hover
+{
+    background-color: #bfcbd6;
+    color: #465c71;
+    text-decoration: none;
+}
+
+div.menu ul li a:active
+{
+    background-color: #465c71;
+    color: #cfdbe6;
+    text-decoration: none;
+}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+    margin: 1em 0px 0em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+    display: block;
+}
+
+fieldset label.inline 
+{
+    display: inline;
+}
+
+leg
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+    width: 137px;
+    height: 19px;
+}
+
+extEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+    width: 42%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: center;
+    width: auto;
+}
+#ContentPlaceHolder2_Login1{margin:auto;}
+#Login1{margin:auto;}
+#LabelSubtitle{ margin-top:20px;}
+.loginDisplay
+{
+    background-image: url("background.png") no-repeat;
+    font-size: 1.1em;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: White;
+    height: 95px;
+    width: 939px;
+}
+
+.loginDisplay a:link
+{
+    color: white;
+}
+
+.loginDisplay a:visited
+{
+    color: white;
+}
+
+.loginDisplay a:hover
+{
+    color: white;
+}
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+   
+}
+
+#LoginButton{ src:"~/images/logiin.png"}
+
+
+div.subtitle
+{ 
+  font-family: Verdana; 
+  font-size: 17px; 
+  font-weight: inherit; 
+  color: #FFFFFF;   
+  padding-left: 35px; 
+  clear:left; 
+  position:relative;
+   
+ 
+  }
+
+
+
+
+div.log
+{
+     text-align: center;
+     width:auto;
+}
+div.body{padding-left: 25px;padding-right: 25px; clear:left; position:relative;
+    top: 0px;
+    left: 0px;
+}
+div.subtitleAux{padding-left: 35px; }
+div.local{text-align: center; margin-top:25px;}
+div.gestao{text-align:center; top:20px;}
+div.cesta{ text-align:center;}
+div.detalhepizza{float: left;
+    width: 231px;
+}
+div.tablepizza{clear: right;}
+#ImageButtonReg{float:right}
+#LabelLog{float:right; margin-right:0px;}
+
+#ImageButtonLog{float:right;}
+#HyperLinkPerfil{float:right;margin-right:10px;}
+#HyperLinkPerfil:hover {color: #D0A55C;}
+ew2{ margin-left: 250px;}
+div.coisas{ margin-top: 10px; margin-left: 14px;}
+
+
+p{ margin: 8px 15px 8px 0px; float: left;}
+
+
+
+ p{ margin: 0px 15px 8px 0px; 
+float: left;
+}
+
+ard1
+{ vertical-align:top;}
+
+
+.accordionHeader
+{
+    border: 1px solid #2F4F4F;
+    color: white;
+    background-color: #800000;
+	font-family: Arial, Sans-Serif;
+	font-size: 12px;
+	font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#master_content .accordionHeader a
+{
+	color: #FFFFFF;
+	background: none;
+	text-decoration: none;
+}
+
+#master_content .accordionHeader a:hover
+{
+	background: none;
+	text-decoration: underline;
+}
+
+.accordionHeaderSelected
+{
+    border: 1px solid #2F4F4F;
+    color: white;
+    background-color: #B30000;
+	font-family: Arial, Sans-Serif;
+	font-size: 12px;
+	font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#master_content .accordionHeaderSelected a
+{
+	color: #FFFFFF;
+	background: none;
+	text-decoration: none;
+}
+
+#master_content .accordionHeaderSelected a:hover
+{
+	background: none;
+	text-decoration: underline;
+}
+
+.accordionContent
+{
+    background-color: #FFFBD6;
+    border: 1px dashed #2F4F4F;
+    border-top: none;
+    padding: 5px;
+    padding-top: 10px;
+}

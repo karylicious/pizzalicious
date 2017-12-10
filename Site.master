@@ -1,0 +1,281 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+      <!-- Start slideshow HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine/css/slideshow.css" media="screen" /> 
+<style type="text/css">.slideshow a#vlb{display:none}</style> 
+<script type="text/javascript" src="engine/js/mootools.js"></script> 
+<script type="text/javascript" src="engine/js/visualslideshow.js"></script> 
+<!-- End slideshow HEAD section -->
+
+
+
+
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 249px;
+        }
+        .style2
+        {
+            width: 480px;
+        }
+        .style3
+        {
+            height: 24px;
+        }
+        .style4
+        {
+            width: 191px;
+        }
+        .style5
+        {
+            height: 24px;
+            width: 191px;
+        }
+        .style6
+        {
+            width: 190px;
+        }
+        .style7
+        {
+            height: 24px;
+            width: 190px;
+        }
+        .style8
+        {
+            width: 169px;
+        }
+        .style9
+        {
+            height: 24px;
+            width: 169px;
+        }
+        .style10
+        {
+            width: 188px;
+        }
+        .style11
+        {
+            height: 24px;
+            width: 188px;
+        }
+        .style12
+        {
+            width: 170px;
+        }
+        </style>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+            </div>
+            <div class="loginDisplay" dir="ltr">
+                <table style="width: 101%;">
+                    <tr>
+                        <td class="style1">
+                            <asp:ImageButton ID="ImageButton5" runat="server" ImageUrl="~/Images/title.png" 
+                                PostBackUrl="~/index.aspx" />
+                        </td>
+                        <td class="style2" dir="ltr">
+                            &nbsp; &nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;
+                            &nbsp;&nbsp;
+                            <br />
+                        </td>
+                        <td align= "right">
+                            <asp:Image ID="Image2" runat="server" Height="23px" 
+                                ImageUrl="~/Images/icon_cart.gif" Width="25px" />
+                            &nbsp;<asp:HyperLink ID="HyperLinkCesta" runat="server" NavigateUrl="~/cesta.aspx">Ver detalhes do pedido</asp:HyperLink>
+                            <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            Itens:
+                            <asp:Label ID="LabelItem" runat="server" Text="0"></asp:Label>
+                            <br />
+&nbsp;<asp:Label ID="LabelPrice" runat="server" Text="Label"></asp:Label>
+&nbsp;<br />
+                            </td>
+                    </tr>
+                </table>
+               <asp:ImageButton ID="ImageButtonReg" runat="server" 
+                    ImageUrl="~/Images/registo.png" PostBackUrl="~/registo.aspx" />&nbsp;&nbsp;&nbsp;
+&nbsp;<asp:ImageButton ID="ImageButtonLog" runat="server" 
+                    ImageUrl="~/Images/logiin.png" onclick="ImageButtonLog_Click" />
+                    
+                <asp:HyperLink ID="HyperLinkPerfil" runat="server" NavigateUrl="~/perfil.aspx" >(Perfil)</asp:HyperLink>
+               <asp:Label ID="LabelLog" runat="server" Width="150px" CssClass="LabelLog" ></asp:Label>
+            </div>
+            <div class="clear hideSkiplink" 
+                style="background-image: url('/PAP/Images/menu6.png')">
+                <table style="width:100%; height: 69px;">
+                    <tr>
+                        <td class="style4">
+                            &nbsp;</td>
+                        <td class="style6">
+                            &nbsp;</td>
+                        <td class="style8">
+                            &nbsp;</td>
+                        <td class="style10">
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="style5" align="center"><a href="index.aspx" class="menu">Início</a>
+                        </td>
+                        <td class="style7" align="center"><a href="quemsomos.aspx" class="menu">Quem somos</a>
+                            &nbsp;</td>
+                        <td class="style9" align="center"><a href="contactos.aspx" class="menu">Contactos</a>
+                            &nbsp;</td>
+                        <td class="style11" align="center"><a href="localizacao.aspx" class="menu">Localização</a>
+                        </td>
+                        <td class="style3" align="center"><a href="especial.aspx" class="menu">Especial</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style4">
+                            &nbsp;</td>
+                        <td class="style6">
+                            &nbsp;</td>
+                        <td class="style8">
+                            &nbsp;</td>
+                        <td class="style10">
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                </table>
+                <br />
+            </div>
+        </div>
+        <div class="main">
+       
+                    <!-- Start slideshow BODY section -->
+                    <div id="show" class="slideshow"> 
+                    <div class="slideshow-images">
+                    <img id="slide-0" src="data/images/princ.jpg" />
+                    <img id="slide-1" src="data/images/cabecalho_iberica.jpg" />
+                    <img id="slide-2" src="data/images/criar_topo.jpg" />
+                    <img id="slide-3" src="data/images/pic6.jpg" />
+                    <img id="slide-4" src="data/images/pic10.jpg"  />
+                    <img id="slide-5" src="data/images/pic14.jpg"  />
+                    <img id="slide-6" src="data/images/pic20.jpg" />
+                    <img id="slide-7" src="data/images/topo_bebida.jpg" />
+                    <img id="slide-8" src="data/images/topo_promos.jpg" />
+                    <img id="slide-9" src="data/images/topo0311_burguer.jpg"/>
+                    </div>
+                    
+                    </div> 
+                    <!-- End slideshow BODY section -->
+
+            <table style="width: 102%; height: 3px;">
+                <tr>
+                    <td class="style12" valign="top">
+                        <div style="background-image: url('/PAP/Images/search.png'); width: 192px; height: 70px;">
+                            <br />
+                            <br />
+                            <asp:TextBox ID="TextBox1" runat="server" style="margin-left: 15px" 
+                                Height="15px" Width="122px"></asp:TextBox>
+                            &nbsp;<asp:ImageButton ID="ImageButton4" runat="server" Height="16px" 
+                                ImageUrl="~/Images/Find Search_32.png" Width="20px" 
+                                onclick="ImageButton4_Click" />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                        </div>
+                        <asp:Panel ID="Panel1" runat="server" BackImageUrl="~/Images/fundo44.png" 
+                            Height="459px" Width="187px">
+                            <asp:Image ID="Image3" runat="server" ImageUrl="~/Images/coo.png" />
+                            <br />
+                            <asp:Repeater ID="repeaterCategorias" runat="server" 
+                                DataSourceID="SqlDataSource1" >
+                                
+                                
+                               <ItemTemplate>
+                                  &nbsp;&nbsp;<asp:Image ID="Image1" runat="server" ImageUrl="~/Images/s.jpg" /><a href="artigos.aspx?cat=<%# Eval("idCategoria") %>"> <%# Eval("NomeCategoria") %>  </a><br />
+                              </ItemTemplate>
+                            </asp:Repeater>
+                            <br />
+                            <asp:Image ID="Image4" runat="server" ImageUrl="~/Images/co.png" Height="38px" 
+                                Width="187px" />
+                            <br />
+                            <asp:ImageButton ID="ImageButtonProdEspc" runat="server" Height="109px"  
+                                style="margin-left: 4px" Width="180px"  PostBackUrl="~/especial.aspx" />
+                               
+                            <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+                                ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+                                SelectCommand="SELECT [idCategoria], [NomeCategoria] FROM [Categoria]"></asp:SqlDataSource>
+                            <br />
+                        </asp:Panel>
+                        <br />
+                    </td>
+                    <td valign="top">
+                    <div class="subtitle"  style="background-image: url('/PAP/Images/cab.png'); background-repeat: no-repeat; top: 0px; left: 0px; height: 37px;">
+                           
+                               <table style="width: 100%; height: 39px;">
+                                   <tr>
+                                       <td>
+&nbsp;
+                                   <asp:Label ID="LabelSubtitle" runat="server">Novidades</asp:Label>
+                                                      
+                                       </td>
+                                   </tr>
+                               </table>
+                                         
+                    </div>
+                        <div id="main">
+                                  
+                                        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                                                                                                                        
+                                          
+                                                                                                                        
+                                            
+                                                                                                                        
+                                          
+                                                                                                                        
+                                        </asp:ContentPlaceHolder>
+                                
+                              
+                         
+                            </div>
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <br />
+            <br />
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer" style="background-color: #150100; color: #c04806;">
+        
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/index.aspx">Início</asp:HyperLink>
+&nbsp;|
+        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/quemsomos.aspx">Quem somos</asp:HyperLink>
+&nbsp;|
+        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/contactos.aspx">Contactos</asp:HyperLink>
+&nbsp;|
+        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/localizacao.aspx">Localização</asp:HyperLink>
+&nbsp;|
+        <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/especial.aspx">Especial</asp:HyperLink>
+        <br />
+        Pizzalicious © 2011   
+        </div>
+     </form>
+</body>
+</html>
